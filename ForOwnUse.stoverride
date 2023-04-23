@@ -40,7 +40,7 @@ http:
 
     # ✅ Flightradar24
     - match: ^https?:\/\/mobile\.flightradar24\.com\/mobile\/(user-session|\w{9})
-      name: flightradar24_22
+      name: flightradar24
       type: request
       timeout: 30
 
