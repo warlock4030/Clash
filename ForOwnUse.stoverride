@@ -135,14 +135,6 @@ http:
       require-body: true
       max-size: 3145728
 
-    # ✅ Nicegram
-    - match: https?:\/\/restore-access\.indream\.app\/restoreAccess\?id=\d{5,10}
-      name: NicegramProCrack_49
-      type: request
-      timeout: 30
-      argument: |-
-        type=text/json&url=https://github.com/ddgksf2013/dev/raw/main/NicegramProCrack.js
-
     # ✅ Appraven(美化)
     - match: ^https?:\/\/appraven\.net\/AppRaven\/(app|social|buy)
       name: AppravenProCrack_51
@@ -231,9 +223,6 @@ script-providers:
     interval: 86400
   WPSOffice_47:
     url: https://raw.githubusercontent.com/510004015/Quantumult_X/Remote/Premium/WPSOffice.js
-    interval: 86400
-  NicegramProCrack_49:
-    url: https://raw.githubusercontent.com/xream/scripts/main/surge/modules/echo-response/index.js
     interval: 86400
   AppravenProCrack_51:
     url: https://github.com/ddgksf2013/dev/raw/main/AppravenProCrack.js
