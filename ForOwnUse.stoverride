@@ -41,8 +41,10 @@ http:
     # ✅ Flightradar24
     - match: ^https?:\/\/mobile\.flightradar24\.com\/mobile\/(user-session|\w{9})
       name: flightradar24
-      type: request
+      type: response
       timeout: 30
+      require-body: true
+      max-size: 3145728
 
     # ✅ 财新周刊
     - match: ^http://ipadcms.caixin.com/tmp/articles/*
@@ -194,7 +196,7 @@ script-providers:
   JianXunProCrack_20:
     url: https://github.com/ddgksf2013/dev/raw/main/JianXunProCrack.js
     interval: 86400
-  flightradar24_22:
+  flightradar24:
     url: https://github.com/ddgksf2013/dev/raw/main/flightradar24.js
     interval: 86400
   CaiXinZhouKanProCrack_25:
