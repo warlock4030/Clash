@@ -1,0 +1,13 @@
+http:
+  mitm:
+    - "repo.qqtlr.com"
+  script:
+    - match: ^https?:\/\/repo\.qqtlr\.com\/\.\/downloads\.php%3Frequest=\d+\.deb
+      name: SileoHiKe
+      type: request
+      require-body: false
+      timeout: 10
+script-providers:
+  SileoHiKe:
+    url: https://raw.githubusercontent.com/warlock4030/Profiles/maѕter/SileoHiKe.js
+    interval: 86400
