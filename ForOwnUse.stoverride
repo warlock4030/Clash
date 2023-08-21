@@ -46,7 +46,7 @@ script-providers:
   CaiXinZhouKanProCrack_25:
     url: https://github.com/ddgksf2013/dev/raw/main/CaiXinZhouKanProCrack.js
     interval: 86400
-  TopWidgets33
+  TopWidgets33:
     url: https://github.com/ddgksf2013/dev/raw/main/TopwidgetsProCrack.js
     interval: 86400
 
