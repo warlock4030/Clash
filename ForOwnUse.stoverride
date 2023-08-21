@@ -22,18 +22,11 @@ http:
       require-body: true
       max-size: 3145728
 
-    # ✅ TopWidgets
-    - match: ^https?:\/\/.*xiaozujian\.com\/api\/app\/config\/userConfig
-      name: TopWidgets33
-      type: response
-      timeout: 30
-      require-body: true
-      max-size: 3145728
 
   mitm:
     - "mobile.flightradar24.com"
     - "gateway.caixin.com"
-    - "*xiaozujian.com"
+
 
 
 
@@ -46,7 +39,5 @@ script-providers:
   CaiXinZhouKanProCrack_25:
     url: https://github.com/ddgksf2013/dev/raw/main/CaiXinZhouKanProCrack.js
     interval: 86400
-  TopWidgets33:
-    url: https://github.com/ddgksf2013/dev/raw/main/TopwidgetsProCrack.js
-    interval: 86400
+
 
