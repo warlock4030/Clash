@@ -33,7 +33,7 @@ http:
   mitm:
     - "mobile.flightradar24.com"
     - "gateway.caixin.com"
-    - "*xiaozujian"
+    - "*xiaozujian.com"
 
 
 
