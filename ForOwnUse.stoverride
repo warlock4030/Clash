@@ -1,43 +1,16 @@
-#SUBSCRIBED https://github.com/ddgksf2013/dev/raw/master/ForOwnUse.confqx.stoverride
-name: Flightradar24&财新周刊&TopWidgets破解
-desc: 来自墨鱼
-
-http:
-
-  script:
-
-    # ✅ Flightradar24
-    - match: ^https?:\/\/mobile\.flightradar24\.com\/mobile\/(user-session|\w{9})
-      name: flightradar24
-      type: response
-      timeout: 30
-      require-body: true
-      max-size: 3145728
-
-    # ✅ 财新周刊
-    - match: ^http://ipadcms.caixin.com/tmp/articles/*
-      name: CaiXinZhouKanProCrack_25
-      type: response
-      timeout: 30
-      require-body: true
-      max-size: 3145728
-
-
-  mitm:
-    - "mobile.flightradar24.com"
-    - "gateway.caixin.com"
-
-
-
+name: IP 网络信息 Tile 面板
+desc: 包含国内和国外. 自己设置对应域名的分流
+category: 工具
+tiles:
+  - name: "网络信息"
+    interval: 300
+    title: "网络信息"
+    content: "..."
+    # argument: "icon=antenna.radiowaves.left.and.right.circle.fill&backgroundColor=#178BD8"
+    icon: "antenna.radiowaves.left.and.right.circle.fill"
+    backgroundColor: "#178BD8"
 
 script-providers:
-
-
-  flightradar24:
-    url: https://github.com/ddgksf2013/dev/raw/main/flightradar24.js
+  "网络信息":
+    url: "https://raw.githubusercontent.com/xream/scripts/main/surge/modules/network-info/index.js"
     interval: 86400
-  CaiXinZhouKanProCrack_25:
-    url: https://github.com/ddgksf2013/dev/raw/main/CaiXinZhouKanProCrack.js
-    interval: 86400
-
-
